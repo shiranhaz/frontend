@@ -19,12 +19,22 @@ import { FooterComponent } from './component/footer/footer.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { ChatContainerComponent } from './component/chat-container/chat-container.component';
+import { ChatRoomListComponent } from './component/chat-room-list/chat-room-list.component';
+import { AddRoomComponent } from './component/add-room/add-room.component';
+import { HomeComponent } from './component/home/home.component';
+import { PageNutFoundComponent } from './component/page-nut-found/page-nut-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ChatContainerComponent,
+    ChatRoomListComponent,
+    AddRoomComponent,
+    HomeComponent,
+    PageNutFoundComponent
   ],
   imports: [
     BrowserModule,

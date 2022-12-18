@@ -1,17 +1,7 @@
-<app-header></app-header>
-
-<div>
-  <h1>chat app</h1>
-  <button type="button" (click)="signInWithGoogle()">Login </button>
+<div class="app">
+  <app-header></app-header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+  <app-footer></app-footer>
 </div>
-
-<!-- <div *ngIf="auth.user | async as user; else showLogin">
-  <h1>Hello {{ user.displayName }}!</h1>
-  <button (click)="logout()">Logout</button>
-</div> -->
-<ng-template #showLogin>
-  <p>Please login.</p>
-  <button (click)="signInWithGoogle()">Login with Google</button>
-</ng-template>
-
-<app-footer></app-footer>
